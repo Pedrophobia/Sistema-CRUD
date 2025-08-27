@@ -1,67 +1,57 @@
-Sistema de Gerenciamento de Usuários
+# Sistema de Gerenciamento de Usuários
 
 Este é um projeto simples de CRUD (Create, Read, Update, Delete) de usuários, utilizando um servidor backend em Node.js e uma interface frontend básica.
 
-Funcionalidades Atuais
+---
 
-Adicionar Usuário: Formulário para cadastrar novos usuários com nome, e-mail e idade.
+## Funcionalidades Atuais
 
- Listar Usuários: Exibição em uma tabela dos usuários cadastrados.
+- **Adicionar Usuário:** Formulário para cadastrar novos usuários com nome, e-mail e idade.  
+- **Listar Usuários:** Exibição em uma tabela dos usuários cadastrados.  
+- **Excluir Usuário:** Botão para remover um usuário da lista.
 
-Excluir Usuário: Botão para remover um usuário da lista.
+---
 
-Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
-Frontend
+### Frontend
+- **HTML5:** Estrutura da página (`teste.html`).  
+- **CSS3:** Estilização com um visual moderno e responsivo (`style.css`).  
+- **JavaScript:** Lógica de interação com a API (`uselist.js`).  
 
- HTML5: Estrutura da página (teste.html).
+### Backend
+- **Node.js:** Ambiente de execução do servidor (`index.js`).  
+- **Express:** Framework para criar a API REST.  
+- **CORS:** Middleware para permitir requisições de origens diferentes.  
+- **users.json:** Arquivo JSON para persistência temporária dos dados.
 
-CSS3: Estilização com um visual moderno e responsivo (style.css).
+---
 
-JavaScript: Lógica de interação com a API (uselist.js).
+## Estrutura do Projeto
 
-Backend
+- `index.js` — Servidor backend que define as rotas da API e serve os arquivos estáticos.  
+- `teste.html` — Página principal com formulário de cadastro e tabela de usuários.  
+- `uselist.js` — Lógica do frontend para comunicação com a API.  
+- `style.css` — Estilos aplicados à página para um design limpo e funcional.  
+- `users.json` — Arquivo que age como banco de dados temporário, armazenando informações dos usuários.
 
-  Node.js: Ambiente de execução do servidor (index.js).
+---
 
-  Express: Framework para criar a API REST.
-  
- CORS: Middleware para permitir requisições de origens diferentes.
- 
-users.json: Arquivo JSON para persistência temporária dos dados.
+## Como Executar o Projeto
 
-Estrutura do Projeto
+### Pré-requisitos
+- Certifique-se de ter o **Node.js** instalado em sua máquina.
 
- index.js: Servidor backend que define as rotas da API para manipular os dados dos usuários e serve os arquivos estáticos.
+### Passos
+1. Abra o terminal no diretório do projeto e instale as dependências:
 
- teste.html: Página principal contendo o formulário de cadastro e a tabela de usuários.
-
- uselist.js: Lógica do frontend que se comunica com a API para gerenciar os dados.
-
-style.css: Estilos aplicados à página para um design limpo e funcional.
-
-users.json: Arquivo que age como um banco de dados temporário, armazenando as informações dos usuários.
-
-Como Executar o Projeto
-
-Pré-requisitos
-
-Certifique-se de ter o Node.js instalado em sua máquina.
-
-Passos
-
- Instale as dependências no terminal, no diretório do projeto:
-Bash
-
+```bash
 npm install express body-parser cors
 
-Inicie o servidor executando o arquivo index.js:
-Bash
+    Inicie o servidor:
 
-    node index.js
+node index.js
 
-    Abra seu navegador e acesse: http://localhost:3000.
+    Abra seu navegador e acesse:
 
-Próximos Passos
-
-O projeto ainda terá novas atualizações.
+http://localhost:3000
