@@ -1,4 +1,4 @@
-// ... (código existente do formulário)
+
 
 // Função para buscar e renderizar os usuários
 function fetchUsers() {
@@ -85,3 +85,4 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(err => console.error('Erro:', err));
     });
 });
+
